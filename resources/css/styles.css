@@ -3464,7 +3464,7 @@ input[type=checkbox] {
 }
 
 .bg-gray {
-  background-color: #f8f8f8;
+  background-color: #000;
 }
 
 .inner {
@@ -3559,6 +3559,7 @@ input[type=checkbox] {
 #header {
   position: relative;
   z-index: 1000;
+  background-color: #000;
 }
 #header.active::before {
   height: 218px;
@@ -3601,7 +3602,7 @@ input[type=checkbox] {
   display: block;
   width: 200px;
   height: 35px;
-  background: url("../../../resources/images/pattern/common/head_logo.png") no-repeat 0 0/contain;
+  background: url("../../images/pattern/common/header_logo.png") no-repeat 0 0/contain;
 }
 #header #logo span {
   position: absolute !important;
@@ -3787,7 +3788,57 @@ input[type=checkbox] {
 }
 
 :root {
-  --swiper-theme-color: red;
+  --swiper-theme-color: $black;
+}
+
+.intro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+.intro .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 73px;
+}
+@media (min-width: 1024px) {
+  .intro .inner {
+    height: auto;
+  }
+}
+.intro .intro-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  white-space: nowrap;
+}
+.intro .intro-text__tit {
+  width: 100%;
+  font-size: 12rem;
+  color: #fff;
+}
+.intro .img-wrap {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .swiper {

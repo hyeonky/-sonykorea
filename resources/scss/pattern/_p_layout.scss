@@ -1,6 +1,6 @@
 // 사이트 레이아웃 관련 요소
 .bg-gray {
-  background-color: $gray-5;
+  background-color: $black;
 }
 
 // grid layout
@@ -85,6 +85,7 @@
 #header {
   position: relative;
   z-index: 1000;
+  background-color: #000;
   &.active {
     &::before {
       // display: block;
@@ -127,7 +128,7 @@
       display: block;
       width: 200px;
       height: 35px;
-      background: url("../../../resources/images/pattern/common/head_logo.png") no-repeat 0 0 / contain;
+      background: url("../../images/pattern/common/header_logo.png") no-repeat 0 0 / contain;
     }
     span {
       @include sr-only;
@@ -309,3 +310,4 @@
     left: 0;
   }
 }
+
