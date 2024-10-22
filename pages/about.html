@@ -25,23 +25,72 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="../resources/js/pattern/ui-swiper.js"></script>
     <script defer src="../resources/js/pattern/ui-pattern-script.js"></script>
-    <script defer src="../resources/include.js"></script>
   </head>
   <body>
     <div id="skip-nav">
-      <a href="#nav-all">메뉴 바로가기</a>
+      <a href="#gnb">메뉴 바로가기</a>
       <a href="#container">본문 바로가기</a>
     </div>
     <div id="wrap">
+      <!-- active 추가시 depth2 활성화 -->
       <header id="header" class="">
         <div class="inner">
           <h1 id="logo">
             <a href="#">
-              <span>sonyKorea</span>
+              <span>우리자산운용</span>
             </a>
           </h1>
-          <!-- search & nav-all 버튼-->
+          <nav id="gnb" class="gnb">
+            <ul class="gnb__depth1">
+              <li>
+                <a href="#">
+                  <span>menu1</span>
+                </a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">menu1-1</a></li>
+                  <li><a href="#">menu1-2</a></li>
+                  <li><a href="#">menu1-3</a></li>
+                  <li><a href="#">menu1-4</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>menu2</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">menu2-1</a></li>
+                  <li><a href="#">menu2-2</a></li>
+                  <li><a href="#">menu2-3</a></li>
+                  <li><a href="#">menu2-4</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>menu3</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">menu3-1</a></li>
+                  <li><a href="#">menu3-2</a></li>
+                  <li><a href="#">menu3-3</a></li>
+                  <li><a href="#">menu3-4</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>menu4</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">menu4-1</a></li>
+                  <li><a href="#">menu4-2</a></li>
+                  <li><a href="#">menu4-3</a></li>
+                  <li><a href="#">menu4-4</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
           <div class="util">
+            <!-- active 추가시 활성화 -->
+            <div class="lang">
+              <button class="lang__btn">kor</button>
+              <ul class="lang__lst">
+                <li>kor</li>
+                <li>eng</li>
+              </ul>
+            </div>
             <button class="search">
               <span class="blind">검색</span>
             </button>
@@ -49,53 +98,54 @@
               <span class="blind">전체메뉴</span>
             </button>
           </div>
-
+        </div>
         <!-- active 추가시 활성화 -->
-        <!-- 전체 메뉴 클릭시 나오는 창 -->
         <nav id="nav-all" class="">
-          <ul class="nav-all__depth1">
+          <ul class="gnb__depth1">
             <li>
               <a href="#">
-                <span>소니와 환경</span>
+                <span>menu1</span>
               </a>
-              <ul class="nav-all__depth2">
-                <li><a href="#">SONY GROUP SITE</a></li>
-                <li><a href="#">소니 디자인</a></li>
-                <li><a href="#">PLAY STATION</a></li>
-                <li><a href="#">지속 가능성</a></li>
-                <li><a href="#">환경</a></li>
-                <li><a href="#">접근성</a></li>
-                <li><a href="#">소니 픽쳐스</a></li>
+              <ul class="gnb__depth2">
+                <li><a href="#">menu1-1</a></li>
+                <li><a href="#">menu1-2</a></li>
+                <li><a href="#">menu1-3</a></li>
+                <li><a href="#">menu1-4</a></li>
               </ul>
             </li>
             <li>
-              <a href="#"><span>스토어</span></a>
-            </li>
-            <li>
-              <a href="#"><span>제품 메뉴</span></a>
-              <ul class="nav-all__depth2">
-                <li><a href="#">카메라</a></li>
-                <li><a href="#">오디오, 카오디오</a></li>
-                <li><a href="#">게임용 기어</a></li>
-                <li><a href="#">이미징 플랫폼</a></li>
-                <li><a href="#">미디어, 스토리지, 케이블</a></li>
-                <li><a href="#">전문가 제품 및 솔루션</a></li>
+              <a href="#"><span>menu2</span></a>
+              <ul class="gnb__depth2">
+                <li><a href="#">menu2-1</a></li>
+                <li><a href="#">menu2-2</a></li>
+                <li><a href="#">menu2-3</a></li>
+                <li><a href="#">menu2-4</a></li>
               </ul>
             </li>
             <li>
-              <a href="#"><span>PLAY STATION</span></a>
+              <a href="#"><span>menu3</span></a>
+              <ul class="gnb__depth2">
+                <li><a href="#">menu3-1</a></li>
+                <li><a href="#">menu3-2</a></li>
+                <li><a href="#">menu3-3</a></li>
+                <li><a href="#">menu3-4</a></li>
+              </ul>
             </li>
             <li>
-              <a href="#"><span>지원</span></a>
+              <a href="#"><span>menu4</span></a>
+              <ul class="gnb__depth2">
+                <li><a href="#">menu4-1</a></li>
+                <li><a href="#">menu4-2</a></li>
+                <li><a href="#">menu4-3</a></li>
+                <li><a href="#">menu4-4</a></li>
+              </ul>
             </li>
           </ul>
 
-          <!-- button_close -->
           <button class="close">
             <span class="close">전체메뉴 닫기</span>
           </button>
         </nav>
-        </div> /.inner
       </header>
       <div class="slide">
         <!-- Slider main container -->
@@ -288,7 +338,6 @@
           </div>
         </section>
       </main>
-      <!-- footer 연결 -->
       <footer id="footer" include-html="./layout/footer.html"></footer>
     </div>
   </body>
