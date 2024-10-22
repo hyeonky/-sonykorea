@@ -28,31 +28,28 @@
     <script defer src="../resources/include.js"></script>
   </head>
   <body>
-    <div id="skip-nav">
-      <a href="#nav-all">메뉴 바로가기</a>
-      <a href="#container">본문 바로가기</a>
-    </div>
-    <div id="wrap">
-      <header id="header" class="">
-        <div class="inner">
-          <h1 id="logo">
-            <a href="#">
-              <span>sonyKorea</span>
-            </a>
-          </h1>
-          <!-- search & nav-all 버튼-->
-          <div class="util">
-            <button class="search">
-              <span class="blind">검색</span>
-            </button>
-            <button class="all-menu">
-              <span class="blind">전체메뉴</span>
-            </button>
-          </div>
-
-        <!-- active 추가시 활성화 -->
-        <!-- 전체 메뉴 클릭시 나오는 창 -->
-        <nav id="nav-all" class="">
+  <div id="skip-nav">
+    <a href="#nav-all">메뉴 바로가기</a>
+    <a href="#container">본문 바로가기 gogo</a>
+  </div>
+  <div id="wrap">
+    <header id="site-header">
+      <div class="inner">
+        <h1 id="logo">
+          <a href="#">
+            <span>sonyKorea</span>
+          </a>
+        </h1>
+        <div class="util">
+          <button class="search" aria-label="검색"> <!-- 수정된 부분 -->
+            <span class="blind">검색</span>
+          </button>
+          <button class="all-menu" aria-label="전체메뉴 열기"> <!-- 수정된 부분 -->
+            <span class="blind">전체메뉴</span>
+          </button>
+        </div>
+  
+        <nav id="nav-all">
           <ul class="nav-all__depth1">
             <li>
               <a href="#">
@@ -89,31 +86,166 @@
               <a href="#"><span>지원</span></a>
             </li>
           </ul>
-
-          <!-- button_close -->
-          <button class="close">
-            <span class="close">전체메뉴 닫기</span>
+          <button class="close" aria-label="전체메뉴 닫기"> <!-- 수정된 부분 -->
+            <span class="blind">전체메뉴 닫기</span>
           </button>
         </nav>
-        </div> /.inner
-      </header> /.header
-
-      <!-- intro -->
-      <div class="intro">
+      </div> <!-- /.inner -->
+    </header> <!-- /.header -->
+  
+    <main id="container">
+      <section class="intro">
         <div class="inner">
           <h2>Transform the future with Sony Experience innovation in your everyday life</h2>
-          <a href="#"><img src="" alt=""></a>
+          <a href="#"><img src="" alt="intro image"></a>
         </div>
-      </div>
+      </section>
+  
+      <article class="cont-latest">
+        <div class="inner">
+          <header class="latest__header">
+            <h2>the latest</h2>
+            <p>"혁신과 감성을 담다. 소니의 신제품으로 새로운 경험을 만나다"</p>
+          </header>
+          <div class="swiper-wrapper latest-lst">
+            <div class="swiper-slide">
+              <div class="latest-lst">
+                <a href="#">
+                  <img src="" alt="latest product">
+                  <strong>text_tit</strong>
+                  <em>text_detail</em>
+                  <span>text_pd</span>
+                </a>
+              </div>
+            </div>
+            <button>prv</button>
+            <button>next</button>
+          </div>
+        </div>
+      </article>
+  
+      <section class="cont-parallax">
+        <div class="cont-parallax__wrapper">
+          <div class="image">
+            <img src="" alt="parallax image 1">
+          </div>
+          <div class="image">
+            <img src="" alt="parallax image 2">
+          </div>
+          <div class="image">
+            <img src="" alt="parallax image 3">
+          </div>
+          <div class="image">
+            <img src="" alt="parallax image 4">
+          </div>
+          <div class="image">
+            <img src="" alt="parallax image 5">
+          </div>
+        </div>
+      </section>
+  
+      <article class="cont-headline">
+        <div class="inner">
+          <div class="text-area"> <!-- /.left -->
+            <div class="text-area__tit">title</div>
+            <span>sub_text</span>
+            <div class="view-all">
+              <a href="#">
+                <span>전체보기</span>
+              </a>
+            </div>
+          </div>
+          <div class="video">video</div> <!-- /.right -->
+        </div>
+      </article>
+  
+      <article class="cont-hot">
+        <div class="inner">
+          <header class="hot__header">
+            <h2>WHAT'S HOT</h2>
+            <p>당신의 일상을 더욱 특별하게 해 줄 소니의 신제품을 만나보세요!</p>
+          </header>
+          <div class="swiper-wrapper bg-slide">
+            <div class="swiper-slide">
+              <div class="latest-lst">
+                <a href="#">
+                  <img src="" alt="hot product">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hot-container">
+            <div class="swiper-wrapper hot-lst">
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="" alt="hot product 1">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="" alt="hot product 2">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="" alt="hot product 3">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-wrapper hot-text">
+              <div class="swiper-slide">
+                <em>text-pd-de</em>
+                <span>title</span>
+                <div class="colorbox">box</div>
+                <p>text-detail</p>
+                <strong></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+  
+      <article class="info">
+        <div class="inner">
+          <header class="info__header">
+            <h2>information</h2>
+            <span>view-all</span>
+          </header>
+          <div class="info-lst">
+            <div class="news">
+              <span>sub-text</span>
+              <strong>title</strong>
+              <em>detail</em>
+            </div>
+            <div class="event">
+              <span>sub-text</span>
+              <strong>title</strong>
+              <em>detail</em>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+  
+    <footer id="site-footer" include-html="./layout/footer.html"></footer>
+  </div>
+  
 
-      <!-- the latest -->
-      <div class="content"></div>
 
 
 
 
+
+
+
+
+
+
+
+
+<!--       
       <div class="intro">
-        <!-- Slider main container -->
+        Slider main container
         <div class="swiper slide-intro">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
@@ -302,9 +434,7 @@
             <a href="#" class="sec-g__more">더보기</a>
           </div>
         </section>
-      </main>
-      <!-- footer 연결 -->
-      <footer id="footer" include-html="./layout/footer.html"></footer>
-    </div>
+      </main> -->
+    
   </body>
 </html>
