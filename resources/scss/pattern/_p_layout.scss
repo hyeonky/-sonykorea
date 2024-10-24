@@ -37,7 +37,7 @@
       margin: 0 auto;
       text-align: center;
     }
-  }
+  }                                                                            
   &.type1 {
     background-color: var(--#{$prefix}white);
     a {
@@ -54,7 +54,7 @@
   padding: 10vw 0;
   &__tit {
     padding-bottom: 2.34375vw;
-    font-size: 4.8rem;
+    font-size: 4.8rem;  
   }
   &__more {
     display: flex;

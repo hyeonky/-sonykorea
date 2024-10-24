@@ -87,6 +87,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: auto;
   }
   .latest-text {
@@ -107,6 +108,13 @@
     padding: 80px;
     text-align: center;
     color: $gray-50;
+    } 
+    p {
+      text-align: center;
+      .m-br {
+        // 이 부분 잘 모르겠다
+        display: block;
+      }
     }
   }
 }
@@ -192,8 +200,8 @@
       object-fit: cover;
     }
   }
-
 }
+
 // 전역 스타일
 .swiper {
   width: 100%;

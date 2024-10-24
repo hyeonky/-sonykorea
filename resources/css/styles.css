@@ -3882,6 +3882,7 @@ input[type=checkbox] {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: auto;
 }
 .cont-latest .latest-text {
@@ -3902,6 +3903,12 @@ input[type=checkbox] {
   padding: 80px;
   text-align: center;
   color: #8e8e8e;
+}
+.cont-latest .latest-text p {
+  text-align: center;
+}
+.cont-latest .latest-text p .m-br {
+  display: block;
 }
 
 .cont-parallax {
