@@ -3813,9 +3813,6 @@ input[type=checkbox] {
 }
 .intro .intro-text {
   padding-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   width: 100%;
   white-space: nowrap;
 }
