@@ -75,10 +75,12 @@
   }
 }
 .cont-parallax {
+  overflow: hidden;
   margin-top: 200px;
   width: 100%;
   height: 100%;
   &__wrapper {
+    
     position: relative;
     display: flex;
     flex-wrap: nowrap;
@@ -91,6 +93,71 @@
     width: auto;
     max-width: unset;
   }
+}
+
+.cont-headline {
+  width: 100%;
+  background: $black;
+  .inner {
+    position: relative;
+    padding: 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .text-area {
+    padding-right: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    &__tit {
+      text-align: left;
+      color: $white;
+      font-weight: bold;
+      font-size: 45px;
+      line-height: 1.2;
+      max-width: 390px;
+      letter-spacing: 0.5px;
+    }
+    &__text {
+      margin-top: 30px;
+      text-align: left;
+      color: $white;
+      font-weight: lighter;
+      font-size: 16px;
+      line-height: 1.2;
+      max-width: 390px;
+      letter-spacing: 0.5px;
+    }
+  }
+  .view-all {
+    margin-top: 50px;
+    border-top: 1px solid $white;
+    display: block;
+    width: 90%;
+    span {
+      display: block;
+      padding-top: 15px;
+      font-size: 18px;
+      font-weight: lighter;
+      color: $white;
+    }
+  }
+  .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 600px;
+    img {
+      object-fit: cover;
+    }
+  }
+
 }
 // 전역 스타일
 .swiper {
