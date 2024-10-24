@@ -21,8 +21,8 @@
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <link rel="stylesheet" href="../resources/css/styles.css" />
     <!-- js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script defer src="../resources/js/pattern/ui-swiper.js"></script>
     <script defer src="../resources/js/pattern/ui-pattern-script.js"></script>
     <script defer src="../resources/include.js"></script>
@@ -118,19 +118,73 @@
                 소니의 신제품으로 새로운 경험을 만나다"
               </p>
             </div>
-            <div class="swiper-wrapper latest-lst">
-              <div class="swiper-slide">
-                <div class="latest-lst">
+          <div class="slide">
+            <div class="swiper latest-lst">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
                   <a href="#">
-                    <img src="" alt="latest product">
-                    <strong>text_tit</strong>
-                    <em>text_detail</em>
-                    <span>text_pd</span>
+                    <img src="../resources/images/pattern/common/cat.png" alt="고양이">
+                    <div class="text-area">
+                      <span>text_tit</span>
+                      <em>text_detail</em>
+                      <strong>text_pd</strong>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="../resources/images/pattern/common/cat.png" alt="고양이">
+                    <div class="text-area">
+                      <span>text_tit</span>
+                      <em>text_detail</em>
+                      <strong>text_pd</strong>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="../resources/images/pattern/common/cat.png" alt="고양이">
+                    <div class="text-area">
+                      <span>text_tit</span>
+                      <em>text_detail</em>
+                      <strong>text_pd</strong>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="../resources/images/pattern/common/cat.png" alt="고양이">
+                    <div class="text-area">
+                      <span>text_tit</span>
+                      <em>text_detail</em>
+                      <strong>text_pd</strong>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="../resources/images/pattern/common/cat.png" alt="고양이">
+                    <div class="text-area">
+                      <span>text_tit</span>
+                      <em>text_detail</em>
+                      <strong>text_pd</strong>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="../resources/images/pattern/common/cat.png" alt="고양이">
+                    <div class="text-area">
+                      <span>text_tit</span>
+                      <em>text_detail</em>
+                      <strong>text_pd</strong>
+                    </div>
                   </a>
                 </div>
               </div>
-              <button>prv</button>
-              <button>next</button>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </article>
@@ -239,6 +293,22 @@
       </main>
     
       <footer id="site-footer" include-html="./layout/footer.html"></footer>
-    </div>  
+    </div>
+    
+    <script>
+      var swiper = new Swiper(".latest-lst", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
