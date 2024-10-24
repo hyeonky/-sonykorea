@@ -3795,51 +3795,69 @@ input[type=checkbox] {
 }
 
 .intro {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100%;
   background-color: #000;
 }
-@media (min-width: 1024px) {
-  .intro {
-    transform: none;
-  }
-}
 .intro .inner {
+  padding: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 100%;
 }
-@media (min-width: 1024px) {
-  .intro .inner {
-    height: auto;
-  }
-}
 .intro .intro-text {
+  padding-bottom: 50px;
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  width: 100%;
   height: 100%;
   white-space: nowrap;
 }
+.intro .intro-text .pd-name {
+  position: absolute;
+  bottom: 180px;
+  left: 0;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+}
 .intro .intro-text__tit {
   width: 100%;
-  font-size: 12rem;
+  font-size: 8rem;
   color: #fff;
+}
+.intro .intro-text__tit::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #999;
+}
+.intro .intro-text__tit::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #999;
 }
 .intro .img-wrap {
   position: absolute;
-  top: 30px;
+  top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 160%;
+}
+.intro img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160%;
+  height: auto;
+  transform: translate(-19%, 10%);
 }
 
 #container {
