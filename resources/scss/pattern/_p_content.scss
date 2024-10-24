@@ -63,7 +63,7 @@
     // 변경할 부분
     text-transform: uppercase;
     font-size: 76px;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 58px;
     letter-spacing: -.4px;
     text-align: center;
@@ -75,19 +75,25 @@
   }
 }
 
-
-
 // 전역 스타일
 .swiper {
   width: 100%;
   height: 100%;
+  margin: 40px;
+  .swiper-wrapper {
+    width: 760px;
+    height: 600px;
+    box-sizing: border-box;
   .swiper-slide {
+    position: relative;
     text-align: center;
     font-size: 18px;
     background: $white;
     display: flex;
     justify-content: center;
     align-items: center;
+    // border-style: hidden;
+    
     img {
       display: block;
       width: 100%;
@@ -99,7 +105,25 @@
       width: 100%;
       height: 100%;
     }
+    .text-area {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 150px;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      background-color: $white;
+      opacity: 85%;
+      overflow: hidden;
+      z-index: 100;
+    }
   }
+}
+  
   .swiper-button-next::after,
   .swiper-button-prev::after {
     display: none;
