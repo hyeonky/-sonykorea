@@ -9,15 +9,18 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
   background-color: $black;
-
+  @include tabletMore {
+    transform: none;
+  }
   .inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    height: 73px;
+    height: 100%;
     @include tabletMore {
-      height: auto;
+      height: auto; // 태블릿 이상일 때 높이를 자동으로 설정
     }
   }
   .intro-text {
@@ -32,17 +35,21 @@
       color: $white;
     }
   }
+  // moblie
   .img-wrap {
     position: absolute;
-    top: 0;
-    left: 20%;
-    width: 60%;
+    top: 30px;
+    left: 0;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
+  
 }
+
 #container {
     overflow: hidden;
     display: flex;
@@ -75,12 +82,11 @@
   }
 }
 .cont-parallax {
-  overflow: hidden;
   margin-top: 200px;
   width: 100%;
   height: 100%;
   &__wrapper {
-    
+    overflow: hidden;
     position: relative;
     display: flex;
     flex-wrap: nowrap;

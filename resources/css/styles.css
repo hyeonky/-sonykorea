@@ -3602,7 +3602,7 @@ input[type=checkbox] {
   display: block;
   width: 200px;
   height: 35px;
-  background: url("../../images/pattern/common/header_logo.png") no-repeat 0 0/contain;
+  background: url("../../../resources/images/pattern/common/sony-logo.svg") no-repeat 0 0/contain;
 }
 #header #logo span {
   position: absolute !important;
@@ -3755,19 +3755,22 @@ input[type=checkbox] {
   border-bottom: 1px solid #c6c6c6;
 }
 .util .search {
+  padding-left: 10px;
   transform: scaleX(-1);
 }
 .util .search::before {
   content: "\f002";
   font-family: "Line Awesome Free";
   font-weight: 900;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
+  color: #fff;
 }
 .util .all-menu::before {
   content: "\f0c9";
   font-family: "Line Awesome Free";
   font-weight: 900;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
+  color: #fff;
 }
 
 #nav-all {
@@ -3797,13 +3800,19 @@ input[type=checkbox] {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
   background-color: #000;
+}
+@media (min-width: 1024px) {
+  .intro {
+    transform: none;
+  }
 }
 .intro .inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  height: 73px;
+  height: 100%;
 }
 @media (min-width: 1024px) {
   .intro .inner {
@@ -3824,9 +3833,9 @@ input[type=checkbox] {
 }
 .intro .img-wrap {
   position: absolute;
-  top: 0;
-  left: 20%;
-  width: 60%;
+  top: 30px;
+  left: 0;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -3866,12 +3875,12 @@ input[type=checkbox] {
 }
 
 .cont-parallax {
-  overflow: hidden;
   margin-top: 200px;
   width: 100%;
   height: 100%;
 }
 .cont-parallax__wrapper {
+  overflow: hidden;
   position: relative;
   display: flex;
   flex-wrap: nowrap;

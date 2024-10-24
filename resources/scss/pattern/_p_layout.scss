@@ -128,7 +128,7 @@
       display: block;
       width: 200px;
       height: 35px;
-      background: url("../../images/pattern/common/header_logo.png") no-repeat 0 0 / contain;
+      background: url("../../../resources/images/pattern/common/sony-logo.svg") no-repeat 0 0 / contain;
     }
     span {
       @include sr-only;
@@ -278,18 +278,21 @@
     }
   }
   .search {
+    padding-left: 10px;
     transform: scaleX(-1);
     &::before {
       content: "\f002";
       @include lineAwesome;
-      font-size: 3.8rem;
+      font-size: 3.5rem;
+      color: $white;
     }
   }
   .all-menu {
     &::before {
       content: "\f0c9";
       @include lineAwesome;
-      font-size: 3.8rem;
+      font-size: 3.5rem;
+      color: $white;
     }
   }
 }
