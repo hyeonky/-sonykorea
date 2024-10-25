@@ -81,14 +81,14 @@
     width: 100%;
 }
 .cont-latest {
-  margin-top: 80px;
+  margin-top: 40px;
   .inner {
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: auto;
+    height: 100%;
   }
   .latest-text {
     display: flex;
@@ -111,6 +111,7 @@
     } 
     p {
       text-align: center;
+      color: #999;
       .m-br {
         // 이 부분 잘 모르겠다
         display: block;
@@ -202,73 +203,6 @@
   }
 }
 
-// 전역 스타일
-.swiper {
-  width: 100%;
-  height: 100%;
-  margin: 40px;
-  .swiper-wrapper {
-    width: 760px;
-    height: 600px;
-    box-sizing: border-box;
-  .swiper-slide {
-    position: relative;
-    text-align: center;
-    font-size: 18px;
-    background: $white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // border-style: hidden;
-    
-    img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    a {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-    .text-area {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 150px;
-      padding: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-direction: column;
-      background-color: $white;
-      opacity: 85%;
-      overflow: hidden;
-      z-index: 100;
-    }
-  }
-}
-  
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    display: none;
-  }
-  .swiper-button-next::before,
-  .swiper-button-prev::before {
-    @include lineAwesome;
-    font-size: 3rem;
-    color: $black;
-    opacity: 0.5;
-  }
-  .swiper-button-next::before {
-    content: "\f138";
-  }
-  .swiper-button-prev::before {
-    content: "\f137";
-  }
-}
 
 .slide-intro {
   .swiper-slide {
@@ -357,18 +291,93 @@
   }
 }
 
-.slide-studio {
+
+// 전역 스타일
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin: 32px;
+  .swiper-wrapper {
+    width: 760px;
+    height: 600px;
+    box-sizing: border-box;
+  .swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .text-area {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 150px;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      background-color: $white;
+      opacity: 85%;
+      overflow: hidden;
+      z-index: 100;
+      line-height: 50px;
+    }
+  }
+}
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+  .swiper-button-next::before,
+  .swiper-button-prev::before {
+    @include lineAwesome;
+    font-size: 3rem;
+    color: $black;
+    opacity: 0.5;
+  }
+  .swiper-button-next::before {
+    content: "\f138";
+  }
+  .swiper-button-prev::before {
+    content: "\f137";
+  }
+}
+
+// 내 스와이퍼 스타일
+.latest-lst {
   overflow: visible;
   width: 80%;
   margin-left: 0;
-  @include mobileMore {
-    width: 90%;
-  }
-  @include tabletMore {
-    width: 100%;
-    margin-left: auto;
-  }
-  .swiper-pagination {
-    bottom: -50px;
+  // @include mobileMore {
+  //   width: 90%;
+  // }
+  // @include tabletMore {
+  //   width: 100%;
+  //   margin-left: auto;
+  // }
+  // .swiper-pagination {
+  //   bottom: -50px;
+  // }
+  .swiper-wrapper {
+    margin-right: 20px;
+    width: 250px;
+    height: 345px;
   }
 }
